@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #ECF2F8;
+    padding: 71px 24px;
+}
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 24px;
+    column-gap: 30px;
+}
+.card {
+    padding: 26px 32px 32px 32px;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+    border-radius: 8px;
+
+}
+.violet {
+    background-color: #733FC8;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-position: top 0 right 24px;
+    background-repeat: no-repeat;
+}
+.gray {
+    background-color: #48556A;
+}
+.white {
+    background-color: #FFFFFF;
+}
+.black {
+    background-color: #19202D;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+}
+.user {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.user.border {
+    border: 2px solid #A775F1;
+}
+.name {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: white;
+}
+.name.dark {
+    color: #48556A;
+}
+
+.status {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    color: white;
+    opacity: 0.5;
+    margin-top: 4px;
+}
+.status.dark {
+    color: #48556A;
+}
+.info {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    margin-top: 16px;
+}
+.info.dark {
+    color: #48556A;
+}
+.description {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #CFCFCF;
+    margin-top: 16px;
+    opacity: 0.7;
+}
+.description.first {
+    margin-top: 40px;
+}
+.description.dark {
+    color: #48556A;
+}
+@media (min-width: 1440px) {
+    body {
+        padding: 164px;
+    }
+    .main {
+        grid-template-columns: repeat(4, 255px);
+    }
+    .violet {
+        background-position: top 0 right 80px;
+        grid-column: 1/3;
+    }
+    .black {
+        grid-column: 2/4;
+    }
+    .kira {
+        grid-row: 1/3;
+        grid-column: 4/4;
+    }
+}
